@@ -9,4 +9,4 @@
 > * 수업 날짜별 폴더 만들기
 > * 폴더 안 readme.md에 그날 배운거 저장
 > * 주소를 통해 들어왔을때 웹페이지 꾸미기 -> index.html
-> > * ex)![Alt text](/path/to/img.jpg)
+> > * ex)![폴더 구성](/0304/폴더 구성.png)
