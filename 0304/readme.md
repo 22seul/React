@@ -9,4 +9,11 @@
 > * 수업 날짜별 폴더 만들기
 > * 폴더 안 readme.md에 그날 배운거 저장
 > * 주소를 통해 들어왔을때 웹페이지 꾸미기 -> index.html
-> > * ex)![폴더 구성](https://github.com/22seul/React/assets/143988446/5c85d33a-382a-47d8-8f7a-0dcda93a6d59)
+> * ex)![폴더 구성](https://github.com/22seul/React/assets/143988446/5c85d33a-382a-47d8-8f7a-0dcda93a6d59)
+---
+> ### (+)사용언어
+> * [###] 제목
+> * [---] 수평선
+> * [>] 블럭인용 문자
+> * [*] 글머리 기호(*,+,-)
+> * 이미지 삽입 방법 : issues -> 이슈 생성창 열기 -> comment에 이미지 드래그 -> 나오는 URL 복붙
