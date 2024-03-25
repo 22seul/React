@@ -58,6 +58,14 @@
 > > - 자 이제 깃 허브를 가게 되면 index.html이 업로드 되었고, commit메시지가 제가 적은 메시지로 된 것을 확인할 수 있습니다.
 ---
 > ![슬라이드11](https://github.com/22seul/React/assets/143988446/a387465b-ae81-4b08-ad4e-675199b91b1c)
+> * 다음으로는 복사본 develop브랜치를 만들겠습니다.
+> > -	git checkout -b develop : 브랜치 만들기
+> > -	현재 브랜치가 깃 허브에는 만들어 지지 않았고, 로컬에서 만들어 졌는데요
+> > -	Push 명령어를 통해 깃 허브에 등록하겠습니다.
+> > -	git push -> (git push 하고 나오는 명령어 복붙)git push --set-upstream origin develop
+> > -	이제 깃 허브에 들어가 새로 고침을 해보면 develop브랜치가 생긴 것을 볼 수 있죠??
+> * 다음으로는 master 브랜치 밑으로 branch생성과 merge를 못하도록 보호하겠습니다.
+> > -	깃허브에 저장소 들어가서 setting들어가신 뒤에 branches클릭 -> 빈 공간에 보호할 브랜치 이름을 적어줍니다. 그 뒤 lock branch랑 Require a pull request before merging 체크해주고 만들어줍니다.
 ---
 > ![슬라이드12](https://github.com/22seul/React/assets/143988446/17f5ff84-7dbe-4eae-9dad-8607f98c3496)
 ---
