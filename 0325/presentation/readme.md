@@ -55,7 +55,7 @@
 > > -	다음은 깃허브로 돌아가 git remote add origin git@github.com:22seul/test.git 이 명령어를 복사해 붙여 주시면 됩니다. 이는 지금 로컬 프로젝트랑 깃허브 저장소와의 연결고리가 없기 때문에 연결고리를 만들어 주는 과정입니다.
 > > -	git remote -v 도 선택 사항이고 연결고리가 잘 만들어 졌는지 확인하는 명령어로 복사한 주소가 나오면 성공입니다. 
 > > -	git push origin master : 코드를 업로드 하는 명령어로 master자리에는 브랜치 이름을 적어주시면 됩니다.
-> 자 이제 깃 허브를 가게 되면 index.html이 업로드 되었고, commit메시지가 제가 적은 메시지로 된 것을 확인할 수 있습니다.
+> > 자 이제 깃 허브를 가게 되면 index.html이 업로드 되었고, commit메시지가 제가 적은 메시지로 된 것을 확인할 수 있습니다.
 ---
 > ![슬라이드11](https://github.com/22seul/React/assets/143988446/a387465b-ae81-4b08-ad4e-675199b91b1c)
 ---
