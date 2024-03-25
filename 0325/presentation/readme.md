@@ -27,11 +27,11 @@
 ---
 > ![슬라이드8](https://github.com/22seul/React/assets/143988446/0e28a458-9f01-494d-83c3-45a49ae15bcf)
 > * 처음에 깃을 설치하시면 환경설정을 해야 하는데요. 깃은 앞에 발표에서 설치했으니 바로 환경설정 하도록 하겠습니다.
--	Git bash를 검색해 클릭해줍니다.
--	git config --global user.name "your_name" 입력해 주시는데 큰 따옴표 안에는 자기 이름 입력해 주시면 됩니다.
--	다음은 똑같은데 user.name부분만 email로 바꿔 입력해 주시고 큰 따옴표 안에 깃허브 가입시 사용한 이메일을 입력하면 됩니다.
--	git config --global user.email "your_email"
--	git config --list 를 입력하여 user.name, user.emil에 입력한 이름과 메일이 들어가있는지만 확인해 주시면 됩니다.
+> > -	Git bash를 검색해 클릭해줍니다.
+> > -	git config --global user.name "your_name" 입력해 주시는데 큰 따옴표 안에는 자기 이름 입력해 주시면 됩니다.
+> > -	다음은 똑같은데 user.name부분만 email로 바꿔 입력해 주시고 큰 따옴표 안에 깃허브 가입시 사용한 이메일을 입력하면 됩니다.
+> > -	git config --global user.email "your_email"
+> > -	git config --list 를 입력하여 user.name, user.emil에 입력한 이름과 메일이 들어가있는지만 확인해 주시면 됩니다.
 ---
 > ![슬라이드9](https://github.com/22seul/React/assets/143988446/f9fe1916-b87c-4449-832b-5c0838cb7645)
 > * 이제 프로젝트 저장소를 만들어 본건데요.
