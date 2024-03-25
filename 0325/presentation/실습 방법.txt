@@ -1,0 +1,103 @@
+프로젝트를 할때 여러분과 팀원들의 코드들을 어떻게 공유하고 합치냐...?
+-> 깃허브로 공유한다
+
+<깃허브 역할>
+1. 소스코드를 저장
+2. 소스코드 공유
+3. 협업하는 공간
+
+<실습>
+(설명)
+깃허브는 소스코드를 올리는 공간이고, 내 컴퓨터에 있는 소스코드를 인터넷으로 올려주는 역할은 git이 함..!
+그래서 깃 설치 해야함.
+
+(깃 설치)
+git 검색 -> 다운로드 클릭 -> 운영체제에 맞춰 설치 (별 다른 선택 없이 next해서 설치하면 됨)
+(깃 환경설정)
+다운로드 후 git bash 열기 
+-> git config --global user.name "your_name"입력 (your_name에 자기 이름 입력)
+-> git config --global user.email "your_email"입력 (your_email에 깃허브 가입시 사용한 이메일 입력)
+-> git config --list로 설정이 잘 되었는지 확인 (user.name, user.email만 확인해 주면 됨)
+
+(repository-저장소 만들기)
+깃허브 로그인 -> NEW클릭 -> repository 이름(test) 작성 -> create repository 클릭
+
+(팀원 초대)
+invite collaborators 클릭 -> add people 클릭 -> 팀원 초대 -> 수락 전일 때 pending invite 뜨고, 수락 후 안뜸
+
+(원하는 파일 업로드)
+배경화면에 폴더 하나 만들어서 vscode에서 열기 -> index.html 작성하고, 터미널에서 git bash로 열기
+-> git init : 맨 처음에 프로젝트를 올릴때는 git init을 해줘야 함
+-> git add . : git add는 어떤 파일을 깃에 올릴지 한번 보자, '.'은 폴더에 있는 모든 파일 올리겠다..!!, git add index.html : index.html만 올리겠다..!!
+(필수x) -> git status : 상태 알려주는 명령어 - 너가 git add . 을 입력해서 어떤 파일이 있는지 찾아봤는데 이러한 파일들이 있더라..!!
+-> git commit -m "first commit" : history 만들어 주기 - 과정을 볼수 있게 만들어 준다..?? 
+-> git remote add origin git@github.com:22seul/test.git : 프로젝트랑 깃허브와의 연결고리가 없기 때문에 연결고리 만들어 주는 과정..! 이 repository로 내 소스코드를 보낸다
+(필수x) -> git remote -v : 연결고리 확인 - 복사한 주소가 나오면 성공!
+-> git push origin master : 마스터 브랜치로 코드를 보낸다..!
+
+(복사본 : develop 브랜치 만들기)
+복사본 develop 브랜치를 왜 만들까..? : master는 찐찐찐 최종본으로 유저들이 보는 사이트이기 때문에 master에는 완별한 코드만 올라가야 하겠죠~~! 그래서 develop 브랜치를 만들어 개발자들이 자유롭게 개발하는 브랜치로 사용.
+
+-> git checkout -b develop : 브랜치 만들기
+-> git push : 아직 브랜치가 깃허브에는 만들어 지지 않았고, 로컬에서 만들어짐
+-> (git push 하고 나오는 명령어 복붙)git push --set-upstream origin develop : 깃허브에 브랜치 등록
+
+(master 브랜치 보호)
+찐찐찐 최종본에 함부로 코드를 push하고 수정할 수 없게 막아야 함.
+-> setting -> branches -> name : master -> Lock branch, Require a pull request before merging 체크 -> create
+테스트
+-> git checkout master : 마스터 브랜치로 이동
+-> git add . -> git commit -m "히히" -> git push origin master -> error!! 그러면 보호 성공
+
+(프로젝트 보드 만들기 : 팀원들과 같이 협업해야 하니까..!)
+-> Projects 클릭 -> Link a project -> create new project -> 타입 선택 
+-> add Item -> FeatureA, FeatureB(팀원이 해야하는 것) 
+-> ... -> manage access -> invite collaborators ->팀원추가
+
+--이제 팀원 역할--
+(프로젝트 코드 복사해서 로컬 폴더로 들고오기)
+로컬 폴더 만들기 -> 폴더에서 터미널 열기
+-> 깃허브의 주소 복사 
+-> git clone 주소 : 깃허브에서 소스코드 다운로드
+
+(이슈 만들기)
+->난 팀원1 : Feature A 들어가기 -> branch 만들기 : 내가 쓰는 연습장 -> change branch source에서 develop선택 -> 만들기 -> 코드 나오는데 그거 복사해서 터미널에 붙여넣기
+
+(코드 수정 후 merge)
+VScode에서 코드 수정 후 저장 -> git add . -> git commit -m "이름 작성" -> git push origin memberA
+pull requests 클릭 -> new full request -> 제 작업환경 memberA에서 develop으로 create pull request
+-> merging 하면 끝!!
+develop의 코드가 수정됨
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
