@@ -24,11 +24,23 @@
 > ![슬라이드7](https://github.com/22seul/React/assets/143988446/94890c96-492d-4c01-9d63-7f2f34ad53bf)
 > * 실습 순서 이해를 돕기 위해 그림으로 준비해봤는데요 처음에 저장소를 만들고 소스코드 틀을 만들어 업로드 해줍니다. 최종본을 보호하기 위해 복사본인 develop브랜치를 만들어주고, 제 개인 작업공간도 만들어 주겠습니다. 그 뒤 제 공간에서 p태그를 수정하여 merge하는 이 과정으로 실습할 예정이고 
 제가 명령어들은 사용할 때 조금씩 설명 드리고, ppt에는 과정별로 명령어 의미까지 있으니 참고해 주시면 좋을 거 같습니다.
-
 ---
 > ![슬라이드8](https://github.com/22seul/React/assets/143988446/0e28a458-9f01-494d-83c3-45a49ae15bcf)
+> * 처음에 깃을 설치하시면 환경설정을 해야 하는데요. 깃은 앞에 발표에서 설치했으니 바로 환경설정 하도록 하겠습니다.
+-	Git bash를 검색해 클릭해줍니다.
+-	git config --global user.name "your_name" 입력해 주시는데 큰 따옴표 안에는 자기 이름 입력해 주시면 됩니다.
+-	다음은 똑같은데 user.name부분만 email로 바꿔 입력해 주시고 큰 따옴표 안에 깃허브 가입시 사용한 이메일을 입력하면 됩니다.
+-	git config --global user.email "your_email"
+-	git config --list 를 입력하여 user.name, user.emil에 입력한 이름과 메일이 들어가있는지만 확인해 주시면 됩니다.
 ---
 > ![슬라이드9](https://github.com/22seul/React/assets/143988446/f9fe1916-b87c-4449-832b-5c0838cb7645)
+> * 이제 프로젝트 저장소를 만들어 본건데요.
+-	먼저 GitHub에 들어가 로그인을 해줍니다.
+-	New클릭 -> 이름 작성 -> 만들기 해 주시면 됩니다.
+-	이제 팀원도 초대할 건데요
+-	Invite collaborator 클릭 -> add people 클릭 -> 팀원 초대를 하면 됩니다.
+-	아직 팀원이 수락 전일 때는 pending invite가 뜨는데
+-	혹시 수락하셨나요…? 네~ 수락하면 뜨지 않습니다.
 ---
 > ![슬라이드10](https://github.com/22seul/React/assets/143988446/ede0f26d-0d11-41b9-bac3-8f59add3c19b)
 ---
