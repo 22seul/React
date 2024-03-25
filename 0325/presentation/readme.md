@@ -68,8 +68,28 @@
 > > -	깃허브에 저장소 들어가서 setting들어가신 뒤에 branches클릭 -> 빈 공간에 보호할 브랜치 이름을 적어줍니다. 그 뒤 lock branch랑 Require a pull request before merging 체크해주고 만들어줍니다.
 ---
 > ![슬라이드12](https://github.com/22seul/React/assets/143988446/17f5ff84-7dbe-4eae-9dad-8607f98c3496)
+> * 팀원들과 협업하기 위해 프로젝트 보드를 만들어 주겠습니다.
+> > -	Project 클릭 -> link a project -> create new project -> 타입 선택 후 보드를 만들어 주면 됩니다.
+> > -	Add item 후에 -> memberA, memberB로 팀원이 해야 할 todo를 만들어 줍니다. 
+> > -	그 후 팀원이 프로젝트를 볼 수 있게 …들어가서 manage access 들어가서 invite collaborators에서 팀원을 추가해 줍니다.
+> * 이제 팀장의 역할을 끝났고, 팀원역할로써 소스코드 다운로드를 해줄 텐데요
+> > -	먼저 배경화면에 소스코드를 다운로드 할 폴더를 만들어 주고,
+> > -	폴더에서 마우스 우클릭 해서 터미널을 열어줍니다.
+> > -	다음으로는 깃 허브 저장소 주소를 복사하고,
+> > -	터미널에 git clone 주소 명령어 입력해주면
+> > -	깃 허브에서 소스코드 다운로드가 되어 이렇게 폴더에 코드가 복사가 됩니다.
 ---
 > ![슬라이드13](https://github.com/22seul/React/assets/143988446/3ca296fb-9f0d-4a9d-882c-2a277120360f)
+> * 다음으로 제가 저의 작업공간인 Member A 브랜치를 만들겠습니다.
+> > -	Project 들어가서 -> Member A클릭 -> convert to issue를 클릭해 이슈를 만들어줍니다. 
+> > -	-> create a branch클릭 후, change branch source에서 develop을 선택 후 브랜치 만들어 주시면 됩니다.
+> > -	그 후 나오는 코드를 복사하여 터미널에 붙여 넣어 줍니다.
+> * 이제 코드를 수정하고 업로드 후 develop 브랜치에 머지까지 하겠습니다.
+> > -	p태그에 이렇게 학번 이름을 써주고 저장해줍니다.
+> > -	git add . -> git commit -m “이름 작성” -> git push origin memberA 아까 설명드린 명령어 들을 입력하여 제 작업공간에 소스코드를 업로드 합니다.
+> > -	머지를 하기 위해 깃허브에 가서 pull requests 클릭 -> new pull request 
+> > -> 제 작업환경에서 develop으로 선택해주고 -> create pull request해서 만들어 주고,
+> > -> 이와 같이 merging을 클릭해주면 develop에 병합됩니다.
 ---
 > ![슬라이드14](https://github.com/22seul/React/assets/143988446/2e4d1b5a-8e2d-4fc4-a6ba-55199c7e00ba)
 ---
