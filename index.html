@@ -86,54 +86,24 @@
         }
 
         /*폴더*/
-        .forder-date1{
+        .forder-date{
             position: fixed;
             display: inline-grid;
-            grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-            grid-template-rows: 5vh;
-            top: 25vh;
-            left: 45vw;
+            grid-template-columns: 10vw 1vw 10vw 1vw 10vw 1vw 10vw 1vw 10vw;
+            grid-template-rows: 20vh;
             color: #FFFFFF;
             font-family: myFont;
-            font-size: 2vw;
-        }
-        .forder-date2{
-            position: fixed;
-            display: inline-grid;
-            grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-            grid-template-rows: 5vh;
-            top: 50vh;
-            left: 45vw;
-            color: #FFFFFF;
-            font-family: myFont;
-            font-size: 2vw;
-        }
-        .forder-date3{
-            position: fixed;
-            display: inline-grid;
-            grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-            grid-template-rows: 5vh;
-            top: 75vh;
-            left: 45vw;
-            color: #FFFFFF;
-            font-family: myFont;
-            font-size: 2vw;
-        }
-        
-        .forder1{
-            color: #FFFFFF;
-            font-family: myFont;
-            font-size: 1.5vw;
-        }
-        .forder{
-            position: fixed;
-            display: inline-grid;
-            grid-template-columns: 9vw;
-            grid-template-rows: 4vh 4vh 4vh 4vh;
+            font-size: 3vw;
             text-align: center;
+            line-height: 20vh;
         }
         .file{
             border: 2px solid white;
+            border-radius: 25%;
+        }
+        .file:hover{
+            background-color: #FFFFFF;
+            color: #1b1b1b;
         }
     </style>
 </head>
@@ -147,128 +117,27 @@
         <button class="next-btn" onclick="changeMonth(1)">&#9654;</button>
     </div>
     <table class="calendar" id="calendarTable"></table>
-    <div class="forder-date1">
-        <div>0304</div>
-        <div>0311</div>
-        <div>0318</div>
-        <div>0325</div>
-        <div>0401</div>
+    <div class="forder-date" style="top: 25vh; left: 44vw;">
+        <div class="file" onclick="location.href='class_html/0304.html';" style="cursor: pointer;">0304</div><div></div>
+        <div class="file" onclick="location.href='class_html/0311.html';" style="cursor: pointer;">0311</div><div></div>
+        <div class="file" onclick="location.href='class_html/0318.html';" style="cursor: pointer;">0318</div><div></div>
+        <div class="file" onclick="location.href='class_html/0325.html';" style="cursor: pointer;">0325</div><div></div>
+        <div class="file" onclick="location.href='class_html/0401.html';" style="cursor: pointer;">0401</div>
     </div>
-    <div class="forder1">
-        <div class="forder" style="top: 30vh; left: 45vw;">
-            <div class="file">정리</div>
-            <div class="file">발표</div>
-            <div class="file">실습</div>
-            <div class="file">과제</div>
-        </div>
-        <div class="forder" style="top: 30vh; left: 55vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 30vh; left: 65vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 30vh; left: 75vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 30vh; left: 85vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
+    <div class="forder-date" style="top: 50vh; left: 44vw;">
+        <div class="file" onclick="location.href='class_html/0408.html';" style="cursor: pointer;">0408</div><div></div>
+        <div class="file" onclick="location.href='class_html/0415.html';" style="cursor: pointer;">0415</div><div></div>
+        <div class="file">중간</div><div></div>
+        <div class="file" onclick="location.href='class_html/0429.html';" style="cursor: pointer;">0429</div><div></div>
+        <div class="file" onclick="location.href='class_html/0513.html';" style="cursor: pointer;">0513</div>
     </div>
-    <div class="forder-date2">
-        <div>0304</div>
-        <div>0311</div>
-        <div>0318</div>
-        <div>0325</div>
-        <div>0401</div>
+    <div class="forder-date" style="top: 75vh; left: 44vw;">
+        <div class="file" onclick="location.href='class_html/0520.html';" style="cursor: pointer;">0520</div><div></div>
+        <div class="file" onclick="location.href='class_html/0529.html';" style="cursor: pointer;">0527</div><div></div>
+        <div class="file" onclick="location.href='class_html/0603.html';" style="cursor: pointer;">0603</div><div></div>
+        <div class="file" onclick="location.href='class_html/0610.html';" style="cursor: pointer;">0610</div><div></div>
+        <div class="file">기말</div>
     </div>
-    <div class="forder1">
-        <div class="forder" style="top: 55vh; left: 45vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 55vh; left: 55vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 55vh; left: 65vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 55vh; left: 75vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 55vh; left: 85vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-    </div>
-    <div class="forder-date3">
-        <div>0304</div>
-        <div>0311</div>
-        <div>0318</div>
-        <div>0325</div>
-        <div>0401</div>
-    </div>
-    <div class="forder1">
-        <div class="forder" style="top: 80vh; left: 45vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 80vh; left: 55vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 80vh; left: 65vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 80vh; left: 75vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-        <div class="forder" style="top: 80vh; left: 85vw;">
-            <div class="file">note</div>
-            <div class="file">presentation</div>
-            <div class="file">practice</div>
-            <div class="file">report</div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
     
     <script>
         var date = new Date();
