@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>new document</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+        setInterval(dpTime, 1000); // 'setInterval' 함수를 올바르게 호출합니다.
+        function dpTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var ampm = hours >= 12 ? "오후 " : "오전 ";
+            hours = hours % 12;
+            hours = hours ? hours : 12; // 0시는 12시로 표시합니다.
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            document.getElementById("dpTime").innerHTML = ampm + hours + ":" + minutes + ":" + seconds;
+        }
+    </script>
+    <span id="dpTime"></span> <!-- 초기 시간을 설정하지 않아도 됩니다. -->
+</body>
+</html>
